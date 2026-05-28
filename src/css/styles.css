@@ -1,0 +1,14 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #6200ea;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+button {
+    background-color: var(--accent-color);
+}
