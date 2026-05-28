@@ -1,0 +1,47 @@
+# Bloquea el acceso a directorios sensibles para todos los rastreadores
+User-agent: *
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /temp/
+Disallow: /admin/
+Disallow: /config/
+
+# Permite el acceso a recursos públicos
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Especifica la ubicación del sitemap
+Sitemap: https://atrujillo.blog/sitemap.xml
+
+# Bloquea rastreadores específicos (opcional)
+User-agent: BadBot
+Disallow: /
+
+# Permite todo para Googlebot (opcional)
+User-agent: Googlebot
+Allow: /
+
+# Reglas específicas para Bingbot
+User-agent: Bingbot
+Disallow: /temp/
+Allow: /
+
+# Bloquea rastreadores de imágenes (opcional)
+User-agent: Googlebot-Image
+Disallow: /private-images/
+
+# Bloquea rastreadores de anuncios (opcional)
+User-agent: AdsBot-Google
+Disallow: /ads/
+
+# Bloquea rastreadores desconocidos
+User-agent: *
+Crawl-delay: 10
+
+# Permite rastreadores de medios sociales
+User-agent: Twitterbot
+Allow: /
+User-agent: FacebookExternalHit
+Allow: /
