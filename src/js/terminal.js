@@ -2,6 +2,7 @@
  * Professional Multi-Language DevOps & Systems Terminal
  * Clean Enterprise SysAdmin Console (100% Real Data, No Invented Info, Full i18n ES/CA/EN)
  */
+import { calculateExperience } from './i18n.js';
 
 const COMMANDS = {
   help: {
@@ -325,25 +326,27 @@ Estatus Laboral:     Incorporación Inmediata para Puestos Presenciales / Híbri
 
       case 'exp':
         const expHeader = lang === 'ca' ? 'TRAJECTÒRIA I EXPERIÈNCIA LABORAL' : lang === 'en' ? 'CAREER HISTORY & EXPERIENCE' : 'TRAYECTORIA Y EXPERIENCIA LABORAL';
+        const attesttoPeriod = calculateExperience(2026, 7, lang, lang === 'en' ? 'Jul 2026' : 'jul. 2026');
+        const etoroPeriod = calculateExperience(2026, 6, lang, lang === 'en' ? 'Jun 2026' : 'jun. 2026');
         const expText = lang === 'en' ? `
           <div class="term-card">
             <div style="font-weight: 700; color: #f97316; margin-bottom: 8px;">[ CAREER TIMELINE: ${expHeader} ]</div>
-            - Attestto (Jul 2026 - Present): Junior DevOps & Systems Engineer (Cloud/IAM, Cloudflare, Fly.io, W3C DID/VC)<br>
-            - eToro (Jun 2026 - Present): Popular Investor (Quantitative Risk Management & Asset Portfolio Selection)<br>
+            - Attestto (${attesttoPeriod}): Junior DevOps & Systems Engineer (Cloud/IAM, Cloudflare, Fly.io, W3C DID/VC)<br>
+            - eToro (${etoroPeriod}): Popular Investor (Quantitative Risk Management & Asset Portfolio Selection)<br>
             - Minsait - Indra Group (Nov 2025 - May 2026): Systems Support Technician (CTTI Healthcare Critical Infrastructure)<br>
             - Institut Indústria Sostenible (May 2023 - Nov 2023): Computer Maintenance & Support Technician
           </div>` : lang === 'ca' ? `
           <div class="term-card">
             <div style="font-weight: 700; color: #f97316; margin-bottom: 8px;">[ TRAJECTÒRIA: ${expHeader} ]</div>
-            - Attestto (Jul 2026 - Present): Enginyer Junior de DevOps i Sistemes (Cloud/IAM, Cloudflare, Fly.io, W3C DID/VC)<br>
-            - eToro (Jun 2026 - Present): Inversor Popular (Gestió Cuantitativa de Riscos i Selecció d'Actius)<br>
+            - Attestto (${attesttoPeriod}): Enginyer Junior de DevOps i Sistemes (Cloud/IAM, Cloudflare, Fly.io, W3C DID/VC)<br>
+            - eToro (${etoroPeriod}): Inversor Popular (Gestió Cuantitativa de Riscos i Selecció d'Actius)<br>
             - Minsait - Indra Group (Nov 2025 - Mai 2026): Tècnic de Soport de Sistemes (Infraestructura Crítica Sanitari CTTI)<br>
             - Institut Indústria Sostenible (Mai 2023 - Nov 2023): Tècnic de Manteniment Informàtic
           </div>` : `
           <div class="term-card">
             <div style="font-weight: 700; color: #f97316; margin-bottom: 8px;">[ TRAYECTORIA: ${expHeader} ]</div>
-            - Attestto (Jul 2026 - Presente): Ingeniero Junior de DevOps y Sistemas (Cloud/IAM, Cloudflare, Fly.io, W3C DID/VC)<br>
-            - eToro (Jun 2026 - Presente): Inversor Popular (Gestión Cuantitativa de Riesgos y Selección de Activos)<br>
+            - Attestto (${attesttoPeriod}): Ingeniero Junior de DevOps y Sistemas (Cloud/IAM, Cloudflare, Fly.io, W3C DID/VC)<br>
+            - eToro (${etoroPeriod}): Inversor Popular (Gestión Cuantitativa de Riesgos y Selección de Activos)<br>
             - Minsait - Indra Group (Nov 2025 - Mayo 2026): Técnico de Soporte de Sistemas (Infraestructura Crítica Sanitaria CTTI)<br>
             - Institut Indústria Sostenible (Mayo 2023 - Nov 2023): Técnico de Mantenimiento Informático
           </div>`;

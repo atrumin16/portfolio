@@ -556,10 +556,83 @@ export function detectBrowserLanguage() {
     return 'es';
 }
 
+export function calculateExperience(startYear, startMonth, lang, startLabel) {
+    const now = new Date();
+    const currentYear = now.getFullYear();
+    const currentMonth = now.getMonth() + 1; // 1-indexed (1 = Jan, 12 = Dec)
+    
+    let totalMonths = (currentYear - startYear) * 12 + (currentMonth - startMonth) + 1;
+    if (totalMonths < 1) totalMonths = 1;
+    
+    const years = Math.floor(totalMonths / 12);
+    const months = totalMonths % 12;
+    
+    let durationStr = '';
+    
+    if (lang === 'en') {
+        if (years === 0) {
+            durationStr = `${months} ${months === 1 ? 'mo' : 'mos'}`;
+        } else if (months === 0) {
+            durationStr = `${years} ${years === 1 ? 'yr' : 'yrs'}`;
+        } else {
+            durationStr = `${years} ${years === 1 ? 'yr' : 'yrs'} ${months} ${months === 1 ? 'mo' : 'mos'}`;
+        }
+        return `${startLabel} - Present · ${durationStr}`;
+    } else if (lang === 'ca') {
+        if (years === 0) {
+            durationStr = `${months} ${months === 1 ? 'mes' : 'mesos'}`;
+        } else if (months === 0) {
+            durationStr = `${years} ${years === 1 ? 'any' : 'anys'}`;
+        } else {
+            durationStr = `${years} ${years === 1 ? 'any' : 'anys'} i ${months} ${months === 1 ? 'mes' : 'mesos'}`;
+        }
+        return `${startLabel} - actualitat · ${durationStr}`;
+    } else {
+        // Spanish (default)
+        if (years === 0) {
+            durationStr = `${months} ${months === 1 ? 'mes' : 'meses'}`;
+        } else if (months === 0) {
+            durationStr = `${years} ${years === 1 ? 'año' : 'años'}`;
+        } else {
+            durationStr = `${years} ${years === 1 ? 'año' : 'años'} y ${months} ${months === 1 ? 'mes' : 'meses'}`;
+        }
+        return `${startLabel} - actualidad · ${durationStr}`;
+    }
+}
+
+export function calculateTotalItYears(lang) {
+    const now = new Date();
+    // Career started in May 2023 at Institut Indústria Sostenible
+    const startYear = 2023;
+    const startMonth = 5;
+    const currentYear = now.getFullYear();
+    const currentMonth = now.getMonth() + 1;
+    
+    const totalMonths = (currentYear - startYear) * 12 + (currentMonth - startMonth);
+    const years = Math.max(1, Math.floor(totalMonths / 12));
+    
+    if (lang === 'en') return `+${years} Years`;
+    if (lang === 'ca') return `+${years} Anys`;
+    return `+${years} Años`;
+}
+
 export function applyTranslation(lang) {
     const targetLang = translations[lang] ? lang : 'es';
     document.documentElement.lang = targetLang;
     
+    // Dynamically calculate and refresh experience dates to prevent any staleness
+    translations.es.exp_attestto_period = calculateExperience(2026, 7, 'es', 'jul. 2026');
+    translations.es.exp_etoro_period = calculateExperience(2026, 6, 'es', 'jun. 2026');
+    translations.es.stat_exp_val = calculateTotalItYears('es');
+
+    translations.ca.exp_attestto_period = calculateExperience(2026, 7, 'ca', 'jul. 2026');
+    translations.ca.exp_etoro_period = calculateExperience(2026, 6, 'ca', 'jun. 2026');
+    translations.ca.stat_exp_val = calculateTotalItYears('ca');
+
+    translations.en.exp_attestto_period = calculateExperience(2026, 7, 'en', 'Jul. 2026');
+    translations.en.exp_etoro_period = calculateExperience(2026, 6, 'en', 'Jun. 2026');
+    translations.en.stat_exp_val = calculateTotalItYears('en');
+
     document.title = translations[targetLang]['page_title'];
 
     // Translate standard elements
