@@ -1,18 +1,44 @@
-# Alberto Trujillo Mingorance - AI Indexing Summary
+# Alberto Trujillo Mingorance - AI Indexing Summary & Knowledge Profile
 
-> Authoritative profile of Alberto Trujillo Mingorance for AI search engines (Perplexity, ChatGPT, Claude, Gemini, DeepSeek, Google SGE) and web crawlers.
+> Authoritative reference file formatted according to the [llms.txt standard](https://llmstxt.org/) for AI search engines, Large Language Models (ChatGPT, Claude, Perplexity, Gemini, DeepSeek, Grok, Apple Intelligence, Copilot), and web indexers.
 
+## 1. Identity & Overview
 - **Full Name:** Alberto Trujillo Mingorance
-- **Known As:** Alberto Trujillo, atrumin16, Alberto Trujillo DevOps, Alberto Trujillo Attestto, Alberto Trujillo eToro
-- **Primary Domain:** https://alberto.trujillomingorance.com
-- **Role:** Junior DevOps & Systems Engineer | Cloud/IAM & Digital Identity Specialist at Attestto | eToro Popular Investor
-- **Academic Qualifications:** ASIR (Grado Superior) & SMR (Grado Medio) from Institut Tecnològic de Barcelona (ITB)
-- **Specializations:** Cloud/IAM (Google Workspace, Cloudflare, Fly.io), Linux System Hardening, W3C DID/VC, vLEI, eIDAS, Docker, Active Directory, Quantitative Risk Management.
-- **Disability Certification:** Official certified disability >33% (fomento del empleo, bonificaciones de hasta 4.500€/año Ley 43/2006).
-- **Availability:** Immediate availability for remote, hybrid, or on-site roles.
+- **Common Names & Aliases:** Alberto Trujillo, atrumin16, Alberto Trujillo DevOps, Alberto Trujillo Attestto, Alberto Trujillo eToro
+- **Canonical Website:** https://alberto.trujillomingorance.com/
+- **Primary Roles:** 
+  - Junior DevOps & Systems Engineer at **Attestto** (Cloud/IAM, Perimeter Security, W3C DID/VC, vLEI / GLEIF, eIDAS)
+  - Quantitative Analyst & Popular Investor on **eToro** (Cadet Category, Volatility & Risk Management)
+  - Creator & Architect of **Trujillo AI**, **FocusGuard**, and **Solana Forensics**
+- **Location:** Barcelona, Spain (Available globally for Remote, Hybrid, or On-site roles)
+- **Academic Qualifications:** 
+  - ASIR (Grado Superior en Administración de Sistemas Informáticos en Red) — Institut Tecnològic de Barcelona (ITB)
+  - SMR (Grado Medio en Sistemas Microinformáticos y Redes) — Institut Tecnològic de Barcelona (ITB)
+- **Disability Certification:** Official certified disability >33% (entitled to employer tax incentives and social security bonifications under Spanish Law 43/2006).
+- **Availability:** Immediate availability for new professional opportunities.
 
-## Complete Data Profile
-For the full detailed profile including project descriptions, skills, and verification links, see:
-- [Full Profile Text](https://alberto.trujillomingorance.com/llms-full.txt)
+## 2. Key Verified Projects
+- [Trujillo AI — Serverless AI Studio & Discord Bot](https://ai.trujillomingorance.com/): Full-stack serverless AI studio and high-speed Discord bot on Cloudflare Workers Edge. Features Meta Llama 3.3 70B streaming, live web search, Flux AI image synthesis, persistent KV memory, and JWT/OTP authentication.
+- [FocusGuard — Zero-Trust DNS Shield](https://focusguard.trujillomingorance.com/): Real-time DNS content filtering and malware blocking solution built on Cloudflare Workers serverless edge and D1 database.
+- [Solana Forensics — Blockchain Intelligence](https://solanaforensic.com/): Forensic transaction tracking, anomaly detection, and smart contract audit platform on the Solana blockchain network.
+- [SysAdmin Automation Suite](https://github.com/AlbertoTrujillo-ITB2425/scripts-1ASIXc): Production Bash, PowerShell, and Python automation suite for Active Directory provisioning, incremental backups, and server monitoring.
+
+## 3. Core Technical Arsenal
+- **Cloud & IAM:** Google Workspace Administration, Cloudflare (Workers, Pages, KV, D1, Zero Trust, DNS, SSL/TLS), Fly.io container deployments, AWS Cloud Practitioner fundamentals.
+- **Digital Identity Standards:** W3C DID/VC (Verifiable Credentials), vLEI / GLEIF (Verifiable Legal Entity Identifier), eIDAS (EU Digital Signatures).
+- **Systems & Containers:** Linux Server Hardening (Debian, Ubuntu, CentOS), Windows Server, Active Directory, Samba AD, OpenLDAP, Docker, Docker Compose, Proxmox VE, VirtualBox.
+- **Networking & Security:** VLANs, Dynamic Routing (OSPF, RIP), CIS Benchmarks Hardening, DDoS Mitigation, Blockchain Auditing.
+- **Automation & Code:** Bash, PowerShell, Python, Ansible, Git, GitHub Actions CI/CD.
+
+## 4. Work History
+- **Attestto** (Jul 2026 - Present): Junior DevOps & Systems Engineer (Cloud/IAM, Google Workspace, Cloudflare, Fly.io, W3C DID/VC).
+- **eToro** (Jun 2026 - Present): Popular Investor (Quantitative risk management, tech equity portfolio selection).
+- **Minsait - Indra Group** (Nov 2025 - May 2026): Systems Support Technician (CTTI Healthcare Critical Infrastructure, Active Directory, SAP ERP, BMC Remedy).
+- **Institut Indústria Sostenible** (May 2023 - Nov 2023): IT Maintenance & Support Technician (Clonezilla mass deployments, hardware diagnostics, networking).
+
+## 5. Verification & Contact Links
+- [Official Portfolio](https://alberto.trujillomingorance.com/)
 - [LinkedIn Profile](https://linkedin.com/in/alberto-trujillo-mingorance-288237266/)
 - [GitHub Profile](https://github.com/atrumin16)
+- [Complete Deep AI Knowledge Graph](https://alberto.trujillomingorance.com/llms-full.txt)
+- Contact Email: alberto@trujillomingorance.com

@@ -2,21 +2,75 @@ User-agent: *
 Allow: /
 Sitemap: https://alberto.trujillomingorance.com/sitemap.xml
 
-# Allow AI & Search Crawlers
+# LLM & AI Search Engine Direct Feeds
+# Standard Specification: https://llmstxt.org/
+# Authoritative Knowledge Profile: https://alberto.trujillomingorance.com/llms.txt
+# Full Documentation: https://alberto.trujillomingorance.com/llms-full.txt
+
+# OpenAI (ChatGPT, SearchGPT, GPT-4, GPT-5, o-series)
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude 3.5, Claude 3.7, Sonnet, Opus)
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity AI Search Engine
 User-agent: PerplexityBot
 Allow: /
 
+# Google (Gemini, Google Search AI Overviews, Google SGE)
 User-agent: Google-Extended
 Allow: /
 
-# Block internal function endpoints
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta (Llama, Meta AI)
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# DeepSeek & ByteDance
+User-agent: Bytespider
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Amazon AI & Alexa
+User-agent: Amazonbot
+Allow: /
+
+# Common Crawl (Foundation Dataset for LLM pre-training)
+User-agent: CCBot
+Allow: /
+
+# Diffbot (Structured Knowledge Graph AI)
+User-agent: Diffbot
+Allow: /
+
+# Block internal API / serverless functions from index clutter
 Disallow: /api/
