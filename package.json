@@ -1,0 +1,19 @@
+{
+  "name": "alberto-trujillo-portfolio",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Portfolio profesional de Alberto Trujillo - SysAdmin & Security Engineer",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && npx wrangler pages deploy dist"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.3",
+    "vite": "^6.3.5"
+  },
+  "author": "Alberto Trujillo",
+  "license": "MIT"
+}

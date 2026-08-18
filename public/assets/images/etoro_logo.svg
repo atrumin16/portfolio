@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 130" width="420" height="130">
+  <!-- Official eToro Logo (Green Horned e + Toro wordmark) -->
+  <g fill="#10b981">
+    <!-- eToro Horned 'e' -->
+    <path d="M 75 18 C 66 18 58 22 52 28 C 40 14 24 7 8 9 C 4 9.5 2 14 5 17 C 16 26 22 38 24 50 C 6 58 -4 76 -4 95 C -4 125 22 150 52 150 L 85 150 L 115 150 C 145 150 170 125 170 95 C 170 65 145 18 75 18 Z M 75 125 C 55 125 39 111 39 95 C 39 82 47 71 59 68 C 64 80 74 91 88 95 C 91 96 93 93 92 90 C 88 79 79 70 68 65 C 86 63 107 73 107 95 C 107 114 92 125 75 125 Z" transform="translate(8, -4) scale(0.82)"/>
+    <!-- Toro Text -->
+    <text x="150" y="96" font-family="'Inter', -apple-system, sans-serif" font-weight="800" font-size="88" letter-spacing="-3">Toro</text>
+  </g>
+</svg>

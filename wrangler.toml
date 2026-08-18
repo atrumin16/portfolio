@@ -1,0 +1,8 @@
+name = "alberto-portfolio"
+compatibility_date = "2026-08-09"
+
+pages_build_output_dir = "dist"
+
+# En Cloudflare Pages, las functions de la carpeta /functions se compilan automáticamente.
+# No es necesario declarar bindings si no usamos KV, D1 o variables de entorno especiales,
+# pero si las usáramos en el futuro, se declararían aquí.

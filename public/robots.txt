@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+Sitemap: https://alberto.trujillomingorance.com/sitemap.xml
+
+# Allow AI & Search Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Block internal function endpoints
+Disallow: /api/
