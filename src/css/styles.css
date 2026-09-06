@@ -2750,12 +2750,65 @@ body.dark .toast-message {
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .section-padding {
+    padding: 36px 0;
+  }
+
+  .glass-card {
+    padding: 18px 14px;
+  }
+
   .hero-name {
     font-size: 2.1rem;
+    line-height: 1.15;
   }
 
   .hero-subtitle {
     font-size: 0.98rem;
+  }
+
+  .hero-stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 12px 10px;
+  }
+
+  .stat-number {
+    font-size: 1.22rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+  }
+
+  .job-skills-tags {
+    gap: 6px;
+  }
+
+  .skill-pill {
+    font-size: 0.72rem;
+    padding: 4px 8px;
+  }
+
+  .project-header .btn {
+    width: 100%;
+  }
+
+  .contact-list a {
+    font-size: 0.85rem;
+    word-break: break-all;
+  }
+
+  .form-control, input, textarea, select {
+    font-size: 16px !important;
+  }
+
+  .btn {
+    min-height: 44px;
   }
 
   .toast-container {
@@ -2779,6 +2832,34 @@ body.dark .toast-message {
     width: 42px;
     height: 42px;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-name {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.92rem;
+  }
+
+  .hero-stats-bar {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .profile-summary-card {
+    padding: 20px 14px;
+  }
+
+  .hero-tags {
+    gap: 6px;
+  }
+
+  .glass-tag {
+    font-size: 0.74rem;
+    padding: 5px 10px;
   }
 }
 
