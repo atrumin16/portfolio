@@ -4,9 +4,9 @@ export function initDarkMode() {
     const savedMode = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     
-    let isDark = false;
-    if (savedMode === 'dark' || (!savedMode && systemPrefersDark)) {
-        isDark = true;
+    let isDark = true;
+    if (savedMode === 'light') {
+        isDark = false;
     }
 
     const applyTheme = (dark) => {

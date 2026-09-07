@@ -242,7 +242,21 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="#0c1322">
+    <meta name="theme-color" content="#080c14">
+
+    <!-- Theme initialization script (prevents flash, defaults to corporate dark) -->
+    <script>
+      (function() {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t === 'light') {
+            document.documentElement.classList.add('light-mode');
+          } else {
+            document.documentElement.classList.add('dark');
+          }
+        } catch(e) {}
+      })();
+    </script>
 
     <!-- CSS (Vite will process this) -->
     <link rel="stylesheet" href="/src/css/styles.css">
@@ -250,7 +264,7 @@
     <!-- JS (Vite will process this) -->
     <script type="module" src="/src/js/main.js"></script>
 </head>
-<body class="light-mode">
+<body class="dark">
     <!-- Back to Top Floating Button -->
     <div class="floating-controls">
         <button id="back-to-top" class="floating-btn hidden" aria-label="Back to Top">
