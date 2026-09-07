@@ -30,6 +30,32 @@ The application is built with modern HTML5, vanilla ES modules, and a dark slate
 
 ---
 
+## System Architecture
+
+```mermaid
+flowchart TD
+    User["Client Browser"]
+    subgraph Edge["Cloudflare Anycast Global Edge Network"]
+        CDN["Static Asset CDN<br/>Cache-Control: immutable"]
+        PagesRouter["Pages Router<br/>_routes.json / _headers"]
+        Functions["Edge Functions Layer<br/>/functions/api/*.js"]
+    end
+    subgraph ClientApp["Vite Single Page Application"]
+        Shell["HTML5 Shell<br/>Dark Slate Design System"]
+        Terminal["In-Browser Terminal CLI<br/>Interactive Command Parser"]
+        i18n["Client i18n Engine<br/>Bilingual State Storage"]
+    end
+
+    User --> CDN
+    CDN --> Shell
+    Shell --> Terminal
+    Shell --> i18n
+    Terminal -.-> Functions
+    PagesRouter --> Functions
+```
+
+---
+
 ## Repository Structure
 
 ```
