@@ -11,10 +11,10 @@
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://api.resend.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests;
 
 /
-  Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=60
 
 /*.html
-  Cache-Control: public, max-age=86400, s-maxage=604800, stale-while-revalidate=86400
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=60
 
 /favicon.svg
   Cache-Control: public, max-age=31536000, immutable
