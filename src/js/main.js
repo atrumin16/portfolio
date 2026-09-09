@@ -8,6 +8,7 @@ import { initTerminal } from './terminal.js';
 import { initProjects } from './projects.js';
 import { initSecurity } from './security.js';
 import '../css/styles.css';
+window.__ASSET_REV = 2;
 
 document.addEventListener('DOMContentLoaded', () => {
     initI18n();
